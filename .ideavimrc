@@ -1,0 +1,26 @@
+let mapleader=" "
+nnoremap <SPACE> <Nop>
+
+set visualbell
+set nu
+set relativenumber
+
+nnoremap <leader>rv :source ~/.ideavimrc<CR>
+nnoremap <leader>ev :e ~/.ideavimrc<CR>
+
+nnoremap <leader>w :w<CR>
+nnoremap <leader>e :action AceAction<CR>
+
+nnoremap [ :action Back<CR>
+nnoremap ] :action Forward<CR>
+
+nnoremap { gT<CR>
+nnoremap } gt<CR>
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
+nnoremap <leader>rr :action RenameElement<CR>
+nnoremap gi :action GotoImplementation<CR>
+xmap <leader>ss :action me.laria.code.idea_caseconv.convert_case_menu<CR>
+

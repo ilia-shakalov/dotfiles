@@ -1,0 +1,116 @@
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 3, y = 3 }
+decorations = "none"
+startup_mode = "FullScreen"
+dynamic_title = true
+opacity=0.8
+
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
+
+[font]
+size=16
+normal = { family = "MesloLGL Nerd Font"}
+bold = { family = "MesloLGL Nerd Font"}
+italic = { family = "MesloLGL Nerd Font"}
+
+[[hints.enabled]]
+command = "open" # On macOS
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002\""
+key = "E"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002%"
+key = "E"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002x"
+key = "X"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00021"
+key = "Key1"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00022"
+key = "Key2"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00023"
+key = "Key3"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00024"
+key = "Key4"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00025"
+key = "Key5"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00026"
+key = "Key6"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00027"
+key = "Key7"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002,"
+key = "Comma"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002I"
+key = "I"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002M"
+key = "M"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002N"
+key = "N"
+mods = "Command"
