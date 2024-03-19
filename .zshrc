@@ -8,7 +8,6 @@ plugins=(
   git
   npm
   yarn
-  zoxide
 )
 
 alias gs="git status"
@@ -79,8 +78,6 @@ function gpush() {
 source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 export PATH=/Users/savvas/Library/Python/3.9/bin/:$PATH
-
-eval "$(zoxide init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
